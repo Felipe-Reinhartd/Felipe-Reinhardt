@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Reinhartd</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .contenedor{
+            max-width:900px;
+            background:rgba(255,255,255,0.95);
+            border-radius:20px;
+            padding:40px;
+            box-shadow:0 20px 40px rgba(0,0,0,0.35);
+            text-align:center;
+        }
+
+        h1{
+            color:#0082c8;
+            margin-bottom:15px;
+            font-size:2.2rem;
+        }
+
+        h3{
+            color:#4383a5;
+            margin-bottom:15px;
+        }
+
+        .linea{
+            width:320px;
+            height:4px;
+            background:#7ac1e7;
+            margin:0 auto 25px auto;
+            border-radius:10px;
+        }
+
+        p{
+            color:#333;
+            font-size:1.1rem;
+            line-height:1.8;
+            text-align:justify;
+            margin-bottom:18px;
+        }
+
+        .destacado{
+            background:#a3dcfb;
+            border-left:5px solid #7ac1e7;
+            padding:20px;
+            border-radius:10px;
+            margin-top:20px;
+            text-align:left;
+        }
+
+        .imagen-final{
+            margin-top:30px;
+        }
+
+        .imagen-final img{
+            width:250px;
+            border-radius:15px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.25);
+        }
+
+        footer{
+            margin-top:25px;
+            color:#555;
+            font-style:italic;
+        }
+
+        /* QR */
+        .qr-container{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #qrcode{
+            padding: 10px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        @media(max-width:768px){
+            .contenedor{
+                padding:25px;
+            }
+
+            h1{
+                font-size:1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Felipe Reinhardt (09/08/1859 - 28/08/1932)</h1>
+
+    <div class="linea"></div>
+
+    <h3><strong> El inventor de Humboldt </strong></h3>
+
+    <div class="destacado">
+        <p> Fue un inmigrante alemán, destacado mecánico, inventor y dirigente comunitario de 
+            la localidad de Humboldt.</p>
+        <p>Además de desempeñarse como peón rural, se destacó por su creatividad e ingenio en el 
+           desarrollo de innovaciones para la maquinaria agrícola.</p>
+        <p>En la zona rural de la colonia tenía un taller donde reparaba máquinas agrícolas y 
+           aparatos de trilla.</p>
+        <p>Entre 1880 y 1882 desarrolló un sistema de propulsión para motores a vapor, un avance 
+           que permitió que muchas máquinas agrícolas pudieran desplazarse por sus propios medios.
+           Gracias a este invento, numerosos motores fueron modificados en su taller.</p>
+        <p>A comienzos del siglo XX diseñó y fabricó un alimentador para trilladoras, una innovación
+           que mejoró la seguridad y redujo la necesidad de mano de obra durante las tareas de trilla,
+        contribuyendo al progreso de la actividad agropecuaria de la región.</p>
+        <p>Representantes de la empresa estadounidense “Case” visitaron Humboldt para conocer sus
+           inventos. Impresionados por sus diseños, lo invitaron a Estados Unidos y finalmente adquirieron
+           sus planos, convirtiéndolo en un símbolo de la innovación agrícola local.</p>
+        <p>Integró la comisión provisoria de la Comunidad Evangélica del Río de la Plata, colaboró en la
+           fundación de la Biblioteca Popular Beck-Herzog y promovió la educación y la cultura en la colonia.</p>
+        <p>También fue uno de los líderes de la Revuelta de Humboldt de 1893, presidió la Comisión Escolar 
+           entre 1898 y 1931 y se desempeñó como presidente de la Comisión de Fomento desde el 24 de agosto
+           de 1899 hasta el 7 de enero de 1906, contribuyendo de manera significativa al crecimiento y 
+           organización de la comunidad.</p>
+        <p>Su legado representa el espíritu emprendedor y el aporte de los inmigrantes al crecimiento de Humboldt,
+            dejando una huella significativa en la historia de la localidad.</p>
+
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <!-- IMAGEN -->
+    <div class="imagen-final">
+        <img src="Felipe Reinhartd.jpg" alt="Tractor Holando y Tumba Cementerio de Humboldt">
+    </div>
+
+    <!-- QR -->
+    <div class="qr-container">
+        <div id="qrcode"></div>
+    </div>
+
+</div>
+
+<!-- LIBRERÍA QR -->
+<script src="codigo qr.png"></script>
+
+<script>
+new QRCode(document.getElementById("qrcode"), {
+    text: "https://nahueleyvastre9-sys.github.io/memoria-covid/",
+    width: 150,
+    height: 150
+});
+</script>
+
+</body>
+</html>
